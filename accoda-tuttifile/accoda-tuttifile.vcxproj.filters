@@ -20,14 +20,14 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="C:\TEMP\elenco.txt" />
-    <Text Include="C:\TEMP\file numero 3.txt" />
-    <Text Include="C:\TEMP\file0001.txt" />
-    <Text Include="C:\TEMP\file0002.txt" />
-    <Text Include="C:\TEMP\file0005.txt" />
-    <Text Include="C:\TEMP\ultimo.txt" />
+    <None Include="file.txt.output" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="file.txt.output" />
+    <Text Include="elenco.txt" />
+    <Text Include="file numero 3.txt" />
+    <Text Include="file0001.txt" />
+    <Text Include="file0002.txt" />
+    <Text Include="file0005.txt" />
+    <Text Include="ultimo.txt" />
   </ItemGroup>
 </Project>
