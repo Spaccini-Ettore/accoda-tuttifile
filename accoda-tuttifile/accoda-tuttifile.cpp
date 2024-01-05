@@ -7,7 +7,7 @@ int accodaTuttiFile(const char* fileConNomi, const char* fileOutput);
 
 int main()
 {
-	int n = accodaTuttiFile("elenco.txt", "file.txt.output");
+	int n = accodaTuttiFile("\\temp\\elenco.txt", "file.txt.output");
 	printf("%d", n);
 	return 0; 
 }
@@ -33,7 +33,9 @@ int accodaTuttiFile(const char* fileConNomi, const char* fileOutput)
 		{
 			filename[strlen(filename) - 1] = '\0'; //sposto il \0 perche fgets mi legge anche il \n
 		}
-		FILE* f = fopen(filename, "rb");
+		char ff2[500] = "C:\\TEMP\\";
+		strcat(ff2, filename);
+		FILE* f = fopen(ff2, "rb");
 		if (f == NULL)
 			continue;
 		int c; 
